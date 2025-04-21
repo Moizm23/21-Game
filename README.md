@@ -69,19 +69,12 @@ README.md             // This file
 
 ---
 
-## 🧩 Future Improvements (Ideas)
-
-- Add card graphics instead of text
-- Multiplayer support
-- Save/load game state
-- Background music or sound effects
-- More realistic dealer behavior (e.g., insurance, splitting)
-
----
-
 ## 📸 Screenshots
 
 ![image](https://github.com/user-attachments/assets/ff5b3187-ad86-4db7-9bdb-aa071b7c8ca9)
+ShowCase of Code:
+
+https://youtu.be/707DrRsyolU
 
 
 ---
