@@ -81,7 +81,8 @@ README.md             // This file
 
 ## 📸 Screenshots
 
-*(You can add screenshots here later for visual presentation.)*
+![image](https://github.com/user-attachments/assets/ff5b3187-ad86-4db7-9bdb-aa071b7c8ca9)
+
 
 ---
 
