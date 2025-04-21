@@ -3,7 +3,7 @@
 
 ## 📌 Overview
 
-This project is a simple **Blackjack** game implemented in **Java** using **Swing** for the graphical user interface. The game lets a player compete against a computer dealer, place bets, and track wins/losses and money remaining.
+This project is a simple Blackjack game implemented in Java using Swing for the graphical user interface. The game lets a player compete against a computer dealer, place bets, and track wins/losses and money remaining.
 
 ---
 
@@ -33,7 +33,7 @@ This project is a simple **Blackjack** game implemented in **Java** using **Swin
 - Face cards (J, Q, K) count as 10.
 - Aces can count as 11 or 1, depending on the situation.
 - The dealer will continue drawing cards if under 16 and not already beating the player.
-- Blackjack (Ace + 10-valued card) pays 1.5x the bet.
+- Blackjack (Ace + 10-valued card) pays 1.5x the bet and is an Automatic win.
 
 ---
 
@@ -48,7 +48,7 @@ This project is a simple **Blackjack** game implemented in **Java** using **Swin
    ```bash
    java BlackjackGame
    ```
-
+4. Make sure to use Java Swing
 ---
 
 ## 📂 File Structure
