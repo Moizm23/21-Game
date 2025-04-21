@@ -9,7 +9,7 @@ public class BlackjackGame extends JFrame {
     // UI components
     private JPanel mainPanel, buttonPanel;
     private JTextArea playerArea, dealerArea, Information;
-    private JLabel statusLabel;
+    private JLabel statusLabel, infoLabel, dealerLabel, playerLabel;
     private JButton hitButton, standButton, restartButton;
     private JButton bet25Button, bet50Button, allInButton;
     
@@ -51,9 +51,22 @@ public class BlackjackGame extends JFrame {
 
         // Labels for areas
         JPanel handPanel = new JPanel(new GridLayout(2, 3));
-        handPanel.add(new JLabel("Player Hand:"));
-        handPanel.add(new JLabel("Dealer Hand:"));
-        handPanel.add(new JLabel("Information"));
+        
+        playerLabel = new JLabel("Player Hand:");
+        dealerLabel = new JLabel("Dealer Hand:");
+        infoLabel = new JLabel("Information:");
+        handPanel.add(playerLabel);
+        handPanel.add(dealerLabel);
+        handPanel.add(infoLabel);
+        
+        playerLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        playerLabel.setForeground(Color.BLACK);
+        dealerLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        dealerLabel.setForeground(Color.BLACK);
+        infoLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        infoLabel.setForeground(Color.BLACK);
+        
+        
         handPanel.add(new JScrollPane(playerArea));
         handPanel.add(new JScrollPane(dealerArea));
         
@@ -147,6 +160,17 @@ public class BlackjackGame extends JFrame {
             endGameCheck();
         });
         
+        Color tableGreen = new Color(34, 139, 34); // Forest green
+        // Set background colors
+        handPanel.setBackground(tableGreen);
+        infoPanel.setBackground(tableGreen);
+        betPanel.setBackground(tableGreen);
+        buttonPanel.setBackground(tableGreen);
+        
+        playerArea.setBackground(new Color(245, 245, 245)); // Slightly off-white for contrast
+        dealerArea.setBackground(new Color(245, 245, 245));
+        Information.setBackground(new Color(245, 245, 245));
+
         
         // Set up initial state
         betPlace();
